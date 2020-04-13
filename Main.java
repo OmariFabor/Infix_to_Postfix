@@ -52,7 +52,7 @@ public class Main {
         return false;
     }
 
-    public static String toProfix(String expression) {
+    public static String toPostfix(String expression) {
         Stack<String> stack = new Stack<>();
         String finalResult = "";
         String[] expArray = expression.split("");
@@ -89,7 +89,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Infix expression:");
         String userExpression = sc.nextLine();
-        System.out.println("Postfix: " + toProfix(userExpression));
+        System.out.println("Postfix: " + toPostfix(userExpression));
 
     }
 }
